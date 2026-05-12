@@ -48,16 +48,16 @@ https://youtu.be/OMLRkXJ0UfU
 ![Home](./assets/images/home.jpeg)
 
 ### 📖 About Page
-![About](./assets/images/about.JPEG)
+![About](./assets/images/about.jpeg)
 
 ### 📋 Menu Page
-![Menu](./assets/images/menu.JPEG)
+![Menu](./assets/images/menu.jpeg)
 
 ### 🛒 Cart Page
-![Cart](./assets/images/cart.JPEG)
+![Cart](./assets/images/cart.jpeg)
 
 ### 📅 Booking Modal
-![Booking](./assets/images/Booking-modal.JPEG)
+![Booking](./assets/images/Booking-modal.jpeg)
 
 ---
 
