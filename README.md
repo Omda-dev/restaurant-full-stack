@@ -45,7 +45,7 @@ https://youtu.be/OMLRkXJ0UfU
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
-![Home](./assets/images/home.JPEG)
+![Home](./assets/images/home.jpeg)
 
 ### 📖 About Page
 ![About](./assets/images/about.JPEG)
