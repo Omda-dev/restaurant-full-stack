@@ -1,0 +1,129 @@
+.offers-section {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.offers-section h2 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #aea9a9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.offers-swiper .swiper-button-next,
+.offers-swiper .swiper-button-prev {
+  color: #ff4a57;
+  transition: all 0.3s;
+}
+.offers-swiper .swiper-button-next:hover,
+.offers-swiper .swiper-button-prev:hover {
+  color: #ff8c42;
+}
+
+.offers-swiper .swiper-pagination-bullet {
+  background: #ff512f;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.offers-swiper .swiper-pagination-bullet-active {
+  background: #dd2476;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.offer-slide {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  transition: transform 0.5s ease-in-out;
+}
+
+.offer-slide:hover {
+  transform: scale(1.03);
+}
+
+.offer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.offer-slide:hover .offer-img {
+  transform: scale(1.1);
+}
+
+.offer-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+}
+
+.offer-text {
+  text-align: center;
+  color: var(--text-main);
+}
+
+.offer-text h3,
+.offer-text p,
+.offer-text button {
+  opacity: 0;
+  transform: translateY(40px);
+  color: var(--text-main);
+}
+
+.swiper-slide-active .offer-text .title {
+  animation: slideUp 0.6s forwards 0.2s; 
+}
+.swiper-slide-active .offer-text .description {
+  animation: slideUp 0.6s forwards 0.5s; 
+}
+.swiper-slide-active .offer-text .btn {
+  animation: slideUp 0.6s forwards 0.8s; 
+}
+
+.offer-text h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.offer-text p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.offer-text button.btn {
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  border: none;
+  color: var(--text-main);
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.offer-text button.btn:hover {
+  background: linear-gradient(90deg, #dd2476, #ff512f);
+  transform: translateY(-4px);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}

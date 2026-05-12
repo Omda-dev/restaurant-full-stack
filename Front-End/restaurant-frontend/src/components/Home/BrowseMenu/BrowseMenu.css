@@ -1,0 +1,118 @@
+.menu-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: #111827;
+}
+
+.menu-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.menu-card {
+  border: 1px solid #D4AF37;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  background: #111827;
+  transition: transform 0.2s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.menu-card p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #9CA3AF;
+}
+
+.menu-link {
+  color: #8B0000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 780px) {
+  .menu-section {
+    padding: 4rem 1.5rem;
+  }
+  .menu-section h2 {
+    font-size: 1.8rem;
+  }
+  .menu-card {
+    padding: 1.5rem 1rem;
+  }
+  .menu-icon {
+    font-size: 2rem;
+  }
+  .menu-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+}
+
+@media (max-width: 480px) {
+  .menu-section {
+    padding: 3rem 1rem;
+  }
+  .menu-section h2 {
+    font-size: 1.5rem;
+  }
+  .menu-card {
+    padding: 1rem 0.5rem;
+  }
+  .menu-icon {
+    font-size: 1.8rem;
+  }
+  .menu-card h3 {
+    font-size: 1rem;
+  }
+  .menu-card p {
+    font-size: 0.8rem;
+  }
+    .menu-grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
+}
+
+@media (max-width: 320px) {
+  .menu-section {
+    padding: 2.5rem 0.5rem;
+  }
+  .menu-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  .menu-card {
+    padding: 0.8rem 0.5rem;
+  }
+  .menu-icon {
+    font-size: 1.5rem;
+  }
+  .menu-card h3 {
+    font-size: 0.95rem;
+  }
+  .menu-card p {
+    font-size: 0.75rem;
+  }
+}

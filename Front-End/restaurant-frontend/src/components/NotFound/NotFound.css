@@ -1,0 +1,73 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #545453, #212121);
+  color: #F9FAFB;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.notfound-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ff2600;
+  margin: 0;
+}
+
+.notfound-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #F9FAFB;
+  text-shadow: 1px 1px 4px #eae6e629;
+}
+.notfound-subtitle span {
+    color: #ff2600;
+    font-size: 2rem;
+    text-shadow: none;
+}
+.notfound-text {
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  color: #9CA3AF;
+}
+
+.notfound-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #212121 ,#545453);
+  color: var(--text-main);
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.notfound-btn:hover {
+  background: linear-gradient(135deg, #545453, #212121);
+  transform: translateY(-2px);
+}
+
+.notfound-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+

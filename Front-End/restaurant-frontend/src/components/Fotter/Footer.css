@@ -1,0 +1,382 @@
+.footer {
+  border-top: #000000 solid 1px;
+  background-color: rgba(32, 73, 12, 0.15);
+  color: #F9FAFB;
+  padding: 40px 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 280px;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.footer-logo {
+  filter: brightness(0) invert(1);
+  margin-top: -30px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.footer-section p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 280px;
+}
+
+.social-icons {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #F9FAFB;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover { color: inherit; }
+.social-icons a:nth-child(1):hover { color: #35acf7; }
+.social-icons a:nth-child(2):hover { color: #0161de; }
+.social-icons a:nth-child(3):hover { color: #E4405F; }
+.social-icons a:nth-child(4):hover { color: #F9FAFB; }
+
+.footer-section h4 {
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-section ul li:hover {
+  color: #D4AF37;
+  font-weight: 700;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(80px, 100px));
+  gap: 10px;
+}
+
+.insta-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.insta-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-phone {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-bottom {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #F9FAFB;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-to-top {
+  margin: 20px 0 10px;
+  padding: 8px 16px;
+  background-color: #D4AF37;
+  color: var(--text-main);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #166100;
+}
+
+.footer-section.hours ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.footer-section.hours ul li {
+  margin-bottom: 10px;
+  color: #F9FAFB;
+  font-weight: 500;
+  cursor: default;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 40px 28px 0;
+  }
+
+  .footer-container {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .footer-section {
+    flex: 1 1 45%;
+    max-width: 420px;
+    text-align: center;
+  }
+
+  .footer-section p {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .footer-logo {
+    height: 120px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-section.hours h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-section.hours ul {
+    margin-top: 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .contact-phone {
+    justify-content: center;
+  }
+
+  .insta-grid {
+    justify-content: center;
+    grid-template-columns: repeat(2, 95px);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 35px 20px 0;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .footer-section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+    .footer-logo {
+        display: block;
+        margin-right: auto;        
+        margin-left: auto;
+        align-content: center;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+  .footer-section h4 {
+    margin-bottom: 14px;
+  }
+
+  .footer-section.hours h4 {
+    margin: 0 0 14px;
+  }
+
+  .footer-section.hours ul {
+    margin-top: 0;
+  }
+
+  .footer-section p {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-phone {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .insta-grid {
+    grid-template-columns: repeat(2, minmax(90px, 110px));
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 16px 0;
+    font-size: 12px;
+  }
+
+  .footer-logo {
+    height: 85px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+
+  .insta-grid {
+    grid-template-columns: repeat(2, minmax(75px, 1fr));
+    gap: 8px;
+  }
+
+  .insta-grid img {
+    border-radius: 10px;
+  }
+
+  .back-to-top {
+    width: 100%;
+    max-width: 220px;
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 430px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12.5px;
+  }
+  .footer-logo {
+    height: 100px;
+  }
+  .social-icons a {
+    font-size: 22px;
+    margin-right: 8px;
+  }
+  .insta-grid {
+    grid-template-columns: repeat(2, minmax(80px, 1fr));
+    gap: 8px;
+    justify-content: center;
+  }
+  .insta-grid img {
+    border-radius: 13px;
+  }
+  .back-to-top {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+  }
+  .footer-logo {
+    height: 90px;
+  }
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+  .insta-grid {
+    grid-template-columns: repeat(2, minmax(70px, 1fr));
+    gap: 6px;
+  }
+  .insta-grid img {
+    border-radius: 12px;
+  }
+  .back-to-top {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 11.5px;
+  }
+  .footer-logo {
+    height: 80px;
+  }
+  .social-icons a {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .insta-grid {
+    grid-template-columns: repeat(2, minmax(60px, 1fr));
+    gap: 5px;
+  }
+  .insta-grid img {
+    border-radius: 10px;
+  }
+  .back-to-top {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}

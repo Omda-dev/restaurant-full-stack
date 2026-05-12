@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+.contact-container {
+    text-align: center;
+    padding: 50px 16px;
+    background: linear-gradient(to top, #111827 70%, rgba(212, 175, 55, 0.08) 30%);
+    font-family: Arial, sans-serif;
+    margin-top: 70px;
+    overflow-x: hidden;
+}
+
+.contact-container h1 {
+    font-family: "Libertinus Serif", serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: #9CA3AF;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background: #111827;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-group.header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.form-group.header>div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #8B0000;
+    color: var(--text-main);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #8B0000;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    color: #F9FAFB;
+    flex-wrap: wrap;
+}
+
+.contact-info div {
+    text-align: left;
+}
+
+
+@media (max-width: 1024px) {
+    .contact-form {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 780px) {
+    .form-group.header {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container h1 {
+        font-size: 2.5em;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .contact-info div {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-container {
+        padding: 30px 10px;
+    }
+
+    .contact-container h1 {
+        font-size: 2em;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .contact-info {
+        gap: 15px;
+    }
+}

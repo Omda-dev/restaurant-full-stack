@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;          
+  display: flex;             
+  flex-direction: column;    
+}
+.content {
+  flex: 1;                  
+}
+
+/* Global restaurant theme polish */
+:root {
+  --brand-gold: #D4AF37;
+  --brand-gold-soft: rgba(212, 175, 55, 0.14);
+  --brand-primary: #8B0000;
+  --brand-primary-soft: rgba(139, 0, 0, 0.28);
+  --surface: #111827;
+  --surface-soft: #111827;
+  --surface-card: #111827;
+  --border-soft: #D4AF37;
+  --text-main: #F9FAFB;
+  --text-muted: #9CA3AF;
+}
+
+body {
+  background: var(--surface-soft);
+  color: var(--text-main);
+}
+
+.navbar {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.38) !important;
+}
+
+.navbar-links li a {
+  border-radius: 25px;
+}
+
+.btn-book,
+.back-to-top,
+.contact-form button,
+.menu-card button,
+.dish-card button,
+.modal-content button[type="submit"],
+.submit-btn,
+.btn-submit,
+.btn.primary {
+  background: var(--brand-primary) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--brand-primary) !important;
+  box-shadow: 0 8px 20px var(--brand-primary-soft) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+}
+
+.btn-book:hover,
+.back-to-top:hover,
+.contact-form button:hover,
+.menu-card button:hover,
+.dish-card button:hover,
+.modal-content button[type="submit"]:hover,
+.submit-btn:hover,
+.btn-submit:hover,
+.btn.primary:hover {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  transform: translateY(-1px) !important;
+  filter: brightness(0.88);
+  box-shadow: 0 10px 24px rgba(212, 175, 55, 0.22) !important;
+}
+
+.register-link,
+.switch-auth .link-btn,
+.menu-link {
+  color: var(--brand-gold) !important;
+}
+
+.modal-backdrop,
+.modal-overlay {
+  background: rgba(17, 24, 39, 0.72) !important;
+  backdrop-filter: blur(4px);
+}
+
+.modal-content,
+.modal,
+.contact-form,
+.menu-card,
+.dish-card,
+.sidebar,
+.profile-form,
+.users-page form,
+.admin-menu form,
+.users-page .overflow-x-auto,
+.admin-menu .overflow-x-auto,
+.dashboard .bg-white,
+.cart-container {
+  background: var(--surface-card) !important;
+  border: 1px solid var(--border-soft) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.34) !important;
+}
+
+.modal-content h2,
+.modal h2,
+.contact-container h1,
+.menu-header h1,
+.featured-section h2,
+.dashboard h2,
+.users-page h2,
+.admin-menu h2 {
+  color: var(--text-main) !important;
+  letter-spacing: 0;
+}
+
+.modal-content h2,
+.modal h2 {
+  color: var(--brand-gold) !important;
+}
+
+.contact-container,
+.menu-page1,
+.menu-page,
+.admin-menu,
+.dashboard,
+.users-page {
+  background: var(--surface-soft) !important;
+}
+
+input,
+select,
+textarea,
+.modal-content input,
+.modal input,
+.modal select,
+.profile-form input,
+.form-group input,
+.form-group textarea,
+.users-page input,
+.users-page select,
+.admin-menu input,
+.admin-menu select,
+.admin-menu textarea {
+  border: 1px solid var(--border-soft) !important;
+  border-radius: 10px !important;
+  color: var(--text-main) !important;
+  background: var(--surface-card) !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.modal-content input:focus,
+.modal input:focus,
+.modal select:focus,
+.profile-form input:focus,
+.form-group input:focus,
+.form-group textarea:focus,
+.users-page input:focus,
+.users-page select:focus,
+.admin-menu input:focus,
+.admin-menu select:focus,
+.admin-menu textarea:focus {
+  border-color: var(--brand-gold) !important;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.18) !important;
+  outline: none !important;
+}
+
+.menu-card,
+.dish-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.menu-card:hover,
+.dish-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 20px 42px rgba(212, 175, 55, 0.18) !important;
+}
+
+.price,
+.dish-card .price,
+.menu-card .price {
+  color: var(--brand-gold) !important;
+}
+
+.menu-tabs button {
+  border-color: var(--border-soft) !important;
+  color: var(--text-main) !important;
+}
+
+.menu-tabs button:hover,
+.menu-tabs button.active,
+.sidebar li.active {
+  background: var(--brand-gold) !important;
+  border-color: var(--brand-gold) !important;
+  color: var(--text-main) !important;
+}
+
+.footer {
+  background: rgba(9, 13, 21, 0.96) !important;
+}
+
+.footer-section h4,
+.footer-section ul li:hover,
+.cart-icon,
+.nav-profile-img {
+  color: var(--brand-gold) !important;
+}
+
+.nav-profile-img {
+  border-color: var(--brand-gold) !important;
+}
+
+.users-table,
+.menu-table,
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+
+.users-table thead,
+.menu-table thead,
+table thead {
+  background: var(--brand-gold-soft) !important;
+}
+
+.users-table th,
+.users-table td,
+.menu-table th,
+.menu-table td,
+table th,
+table td {
+  border-color: var(--border-soft) !important;
+}
+
+.users-table tbody tr,
+.menu-table tbody tr,
+table tbody tr {
+  transition: background-color 0.2s ease !important;
+}
+
+.users-table tbody tr:hover,
+.menu-table tbody tr:hover,
+table tbody tr:hover {
+  background: rgba(212, 175, 55, 0.10) !important;
+}
+
+.users-page button,
+.admin-menu button,
+.dashboard button {
+  border-radius: 10px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+}

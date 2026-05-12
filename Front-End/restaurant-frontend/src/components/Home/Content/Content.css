@@ -1,0 +1,164 @@
+.foodSection {
+  background-color: rgba(197, 246, 201, 0.121);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 40px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #F9FAFB;
+}
+
+.imagesColumn {
+  padding-left: 40px;
+  margin-left: 40px;
+  display: flex;
+  gap: 16px;
+  flex: 1 1 250px;
+}
+
+.largeImageWrapper {
+  margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.smallImagesWrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-right: 40px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.largeImageWrapper:hover .image {
+  transform: scale(1.05);
+}
+
+.smallImage {
+  flex: 1;
+  object-fit: cover;
+  border-radius: 12px;
+  height: 130px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.smallImage:hover {
+  transform: scale(1.05);
+}
+
+.textColumn {
+  flex: 1 1 350px;
+  min-width: 300px;
+  margin-left: 50px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #F9FAFB;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  color: #9CA3AF;
+  max-width: 400px;
+}
+
+.features {
+  list-style: none;
+  padding-left: 0;
+  color: #F9FAFB;
+}
+
+.features li {
+  margin-bottom: 14px;
+  font-weight: 600;
+  padding-left: 28px;
+  position: relative;
+}
+
+.features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #a33;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .foodSection {
+    gap: 20px;
+    padding: 40px 16px;
+  }
+  .imagesColumn {
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+  .smallImagesWrapper {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .foodSection {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .imagesColumn {
+    flex-direction: column;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .smallImagesWrapper {
+    flex-direction: row;
+    margin-top: 16px;
+    gap: 10px;
+    margin-right: 0;
+  }
+  .textColumn {
+    text-align: center;
+    margin-left: 0;
+  }
+  .features li {
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+  .smallImagesWrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .smallImage {
+    height: 100px;
+  }
+}
